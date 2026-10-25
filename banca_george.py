@@ -1,3 +1,4 @@
+
 print("========== BUN VENIT LA BANCA GEORGE! ==========")
 print("=" * 50)
 
@@ -22,7 +23,8 @@ else:
     parola_confirmata = input("Reintrodu parola  --  ")
 
 print("=" * 50)
-cont_ales = input("Ce cont alegeti (adult/junior)  --  ")
+# .lower() transformă totul în litere mici (funcționează și la Adult, ADULT, etc.)
+cont_ales = input("Ce cont alegeti (adult/junior)  --  ").lower()
 
 varsta = 2026 - nastere_user
 
@@ -35,9 +37,10 @@ else:
     print("Aveti varsta necesara")
 
 print("=" * 50)
-optiune_user = input("Doriti sa depuneti bani in cont ? (da/nu)  --  ")
+# .lower() rezolvă problema și pentru "Da", "DA", etc.
+optiune_user = input("Doriti sa depuneti bani in cont ? (da/nu)  --  ").lower()
 
-if optiune_user == "da" or optiune_user == "Da":
+if optiune_user == "da":
     sold_user = input("Alegeti suma  --  ")
 else:
     print("Nu este nicio problema")

@@ -5,7 +5,6 @@ print("=" * 50)
 nume_user = input("Cum te numesti ?  --  ")
 nastere_user = int(input("Care este anul nasteri ?  --  "))
 
-# Setăm o valoare inițială pentru sold
 sold_user = 0 
 
 parola_user = input("Alegeti o parola  --  ")
@@ -23,7 +22,6 @@ else:
     parola_confirmata = input("Reintrodu parola  --  ")
 
 print("=" * 50)
-# .lower() transformă totul în litere mici (funcționează și la Adult, ADULT, etc.)
 cont_ales = input("Ce cont alegeti (adult/junior)  --  ").lower()
 
 varsta = 2026 - nastere_user
@@ -37,7 +35,6 @@ else:
     print("Aveti varsta necesara")
 
 print("=" * 50)
-# .lower() rezolvă problema și pentru "Da", "DA", etc.
 optiune_user = input("Doriti sa depuneti bani in cont ? (da/nu)  --  ").lower()
 
 if optiune_user == "da":
